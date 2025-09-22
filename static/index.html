@@ -2,21 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener - Shorten Your Links Instantly</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
-
-    <title>URL Shortner</title>
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-link"></i>
+                <span>URL Shortener</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <!-- <li><a href="./about.html">About</a></li> -->
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-<div class="center">
-    <h1 align="center"> URL Shortener</h1>
-</div>
-    <input id="url" type="text" placeholder="Enter URL" name="url">
-    <br>
-    <input id="submit" type="submit" class="btn">
-    <div id="shortcode" class="mydiv"></div>
+    <!-- Main Content -->
+    <main class="main" id="home">
+        <div class="container">
+            <div class="hero">
+                <h1>Shorten Your URLs</h1>
+                <p>Transform long, complex URLs into short, memorable links that are perfect for sharing anywhere</p>
+            </div>
 
+            <div class="shortener-card">
+                <div class="input-group">
+                    <input 
+                        type="url" 
+                        class="url-input" 
+                        id="url" 
+                        placeholder="Enter your long URL here..."
+                        required
+                    >
+                    <button type="button" class="shorten-btn" id="submit">
+                        <span class="btn-text">
+                            <i class="fas fa-scissors"></i>
+                            Shorten URL
+                        </span>
+                        <div class="loading" id="loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="result-section" id="shortcode">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Features Section -->
+            <section class="features" id="features">
+                <h2>Why Choose Our URL Shortener?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Lightning Fast</h3>
+                        <p>Generate short URLs instantly with our optimized system</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure & Reliable</h3>
+                        <p>Your URLs are safe with enterprise-grade security</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analytics Ready</h3>
+                        <p>Track clicks and performance of your shortened links</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">URLs Shortened</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Total Clicks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2K+</div>
+                    <div class="stat-label">Happy Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>URL Shortener</h3>
+                <p>The fastest and most reliable URL shortening service. Create short links, track performance, and manage your URLs with ease.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Sau152004" aria-label="Github"><i class="fab fa-github"></i></a>
+               
+                    <a href="https://www.linkedin.com/in/saurabh-yadav-44947625b/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                   
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>About Developer</h3>
+                <div class="about-dev">
+                    <p>Saurabh Yadav</p>
+                    <p>Information Technology Student</p>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> ysaurabh0704@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9794064056</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ghaziabad India</p>
+                </div>  
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 URL Shortener. All rights reserved. Made with <i class="fas fa-heart"></i> for the web.</p>
+        </div>
+    </footer>
 </body>
 </html>
