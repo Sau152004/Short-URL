@@ -6,6 +6,7 @@ A URL-Shortener created using Node-JS and synced with Firebase Database.
 
 ## Demo
 
+https://short-url-kv67.onrender.com
 
 ## Why use it?
 
@@ -27,6 +28,7 @@ Great tool for shortening a long URL to just 4 characters.
 
 ## Screenshot
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41ce4b3d-4be6-45f3-9aed-3e55e74c47cc" />
 
 
 
